@@ -1,0 +1,727 @@
+@font-face {
+  font-family: MonumentExtended-Regular;
+  src: url("MonumentExtended-Regular.otf");
+}
+@font-face {
+  font-family: MonumentExtended-Ultrabold;
+  src: url("MonumentExtended-Ultrabold.otf");
+}
+
+div.logo {
+  height: auto;
+  width: auto;
+  float: left;
+  padding-left: 2%;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+.logo img {
+  width: 100px;
+  height: 25px;
+  object-fit: cover;
+}
+body {
+  /*background-image: url(bg1.jpeg);*/
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+
+  /*background-size: cover;*/
+}
+
+.bg-image {
+  background-image: url(hcbackground1.png);
+  background-position-x: center;
+  background-position-y: 15%;
+  background-size: cover;
+  background-color: black;
+  height: 100%;
+}
+
+div.nav {
+  overflow: hidden;
+  background-color: rgb(124, 124, 124, 0.5);
+  width: 100%;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  height: 5vh;
+  margin-bottom: 0 !important;
+  border-bottom: 0 !important;
+}
+
+.nav a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1vw;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav a:hover {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.activenav {
+  font-weight: bold;
+}
+
+p.exp {
+  font-family: MonumentExtended-Regular;
+  font-size: 3vw;
+  font-style: italic;
+  font-weight: bold;
+  color: #ffffff;
+  line-height: 0%;
+}
+
+p.new {
+  font-family: MonumentExtended-Ultrabold;
+  font-size: 5vw;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0px;
+  margin-top: -8vw;
+}
+
+p.p1 {
+  font-family: Arial;
+  font-size: 1.5vw;
+  font-style: italic;
+  color: #ffffff;
+  margin-top: -2vw;
+}
+
+p.learn {
+  font-family: MonumentExtended-Ultrabold;
+  font-size: 100px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-top: -300px;
+  margin-right: 100px;
+  margin-left: auto;
+}
+
+p.p2 {
+  font-family: Arial;
+  font-size: 28px;
+  font-style: italic;
+  color: #ffffff;
+  margin-top: -450px;
+  margin-right: 100px;
+  margin-left: auto;
+  text-align: right;
+}
+
+div.first {
+  margin-top: 100px;
+  margin-left: 75px;
+  display: grid;
+  align-items: center;
+  height: 600px;
+}
+
+div.second {
+  margin-top: 500px;
+  margin-left: 75px;
+  display: grid;
+  align-items: center;
+  height: 600px;
+}
+
+button.getstarted {
+  background-color: rgb(87, 230, 255);
+  border: none;
+  color: rgb(255, 255, 255);
+  padding: 20px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 40px;
+  font-size: 38px;
+  font-weight: bold;
+  margin-left: 75px;
+  margin-top: -200px;
+}
+
+button.guide {
+  background-color: rgb(87, 230, 255);
+  border: none;
+  color: rgb(255, 255, 255);
+  padding: 20px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 40px;
+  font-size: 38px;
+  font-weight: bold;
+  float: right;
+  margin-right: 100px;
+  margin-top: -150px;
+  margin-bottom: 250px;
+}
+
+div.exptitle {
+  font-family: Arial;
+  font-size: 90px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 0px;
+}
+div.expnav {
+  font-family: arial;
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+  margin-top: 50 px;
+  text-align: center;
+}
+
+.expnav a {
+  color: #f2f2f2;
+
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+div.gal {
+  margin: auto;
+  width: 95%;
+  padding: 10px;
+}
+
+div.gallery {
+  margin-left: 20px;
+  margin-right: 20px;
+  border: 1px solid #ccc;
+  display: inline-block;
+
+  border-radius: 25px;
+  margin-bottom: 15px;
+  width: 310px;
+  height: 310px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: 75%;
+  border-radius: 25px;
+  object-fit: cover;
+}
+
+div.desc {
+  padding: 15px;
+  height: 30px;
+  text-align: center;
+  overflow-y: auto;
+  color: white;
+}
+
+div.form {
+  height: 600px;
+  width: 650px;
+  margin-left: 50px;
+  margin-right: 1250px;
+  padding: 35px;
+  background-color: #033f51;
+  border-radius: 25px;
+  vertical-align: middle;
+}
+
+label {
+  color: white;
+  padding: 8px;
+  font-family: Arial;
+}
+
+input {
+  padding: 5px;
+  border-radius: 10px;
+  margin: 5px;
+}
+
+p.login {
+  font-family: arial;
+  font-weight: bold;
+  color: white;
+  font-size: 50px;
+}
+
+p.isilogin {
+  font-family: arial;
+
+  color: white;
+  font-size: 20px;
+}
+
+.inp {
+  width: 90%;
+  margin-right: 10px;
+  height: 40px;
+}
+.but {
+  width: 150px;
+  height: 50px;
+  margin-top: 15px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: aqua;
+}
+
+.but:hover {
+  border-color: white;
+}
+
+p.back {
+  color: white;
+  margin-left: 75px;
+}
+
+div.back1 {
+  position: absolute;
+  display: inline-block;
+  top: 1vw;
+  right: 6vw;
+  max-width: 700px;
+  max-height: 900px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+div.back1 img {
+  width: 100%;
+  height: auto;
+  border-radius: 25px;
+  object-fit: cover;
+}
+
+div.back2 {
+  position: absolute;
+  display: inline-block;
+  top: 60px;
+  right: 150px;
+  width: 700px;
+  height: 900px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+div.back2 img {
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  object-fit: cover;
+}
+
+div.back3 {
+  position: absolute;
+  display: inline-block;
+  top: 1000px;
+  left: 10px;
+  width: 900px;
+  height: 900px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+div.back3 img {
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  object-fit: cover;
+}
+
+div.containerhcs {
+  height: 25vh;
+  width: 100%;
+  background-color: rgb(124, 124, 124, 0.5);
+  display: inline-block;
+}
+.containerhcs p {
+  font-family: MonumentExtended-Regular;
+  font-size: 24px;
+  text-align: center;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  color: white;
+}
+.containerhcs input {
+  padding: 0.5%;
+  margin-top: 0%;
+  width: 90%;
+  margin: auto;
+  display: block;
+}
+
+div.galhc {
+  margin: auto;
+  width: 95%;
+  padding: 20px;
+
+  text-align: center;
+}
+div.galleryhc {
+  margin-left: 20px;
+  margin-right: 20px;
+
+  border: 1px solid #ccc;
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 25px;
+
+  width: 500px;
+  height: 250px;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  overflow: hidden;
+
+  margin-top: 30px;
+}
+
+div.galleryhc:hover {
+  border: 1px solid #777;
+}
+
+div.galleryhc img {
+  width: 100%;
+  height: 75%;
+  border-radius: 25px;
+  object-fit: contain;
+}
+
+div.deschc {
+  height: 30px;
+  text-align: center;
+  overflow: hidden;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  max-height: 500px;
+  position: relative;
+  margin: auto;
+  background-color: #bbb;
+}
+
+/* Hide the images by default */
+.mySlides {
+  width: 100%;
+
+  object-fit: cover;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+div.bannerprofile {
+  width: 100%;
+  height: 30vh;
+
+  background-color: aquamarine;
+  display: inline-block;
+}
+.bannerprofile img {
+  width: 100%;
+  max-height: 30vh;
+  object-fit: cover;
+}
+
+div.profile {
+  width: 20vw;
+  height: 100%;
+
+  background-color: rgb(124, 124, 124, 0.5);
+  margin-left: 11vw;
+  position: fixed;
+  top: 18vh;
+  border-radius: 35px;
+  text-align: center;
+  object-fit: cover;
+}
+
+div.collection {
+  width: 60vw;
+  height: 5vh;
+  margin-left: 37vw;
+
+  margin-top: 2vh;
+  text-align: center;
+  display: inline-block;
+}
+
+.collection p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: white;
+  font-size: 1vw;
+  margin-top: 2vh;
+}
+
+div.galpro {
+  width: 60vw;
+  height: 55.5vh;
+  margin: auto;
+  margin-top: 2vh;
+  margin-left: 37vw;
+  margin-right: 6vw;
+  text-align: center;
+
+  object-fit: cover;
+  overflow-y: scroll;
+  padding-bottom: 5vh;
+
+  scrollbar-color: #000000 #000000;
+  scrollbar-width: thin;
+}
+div.gallerypro {
+  margin-left: 1vw;
+  margin-right: 1vw;
+
+  border: 1px solid #ccc;
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 25px;
+
+  width: 25vw;
+  height: 40vh;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  overflow: hidden;
+
+  margin-top: 30px;
+}
+
+div.gallerypro:hover {
+  border: 1px solid #777;
+}
+
+div.gallerypro img {
+  width: 100%;
+  height: 75%;
+  border-radius: 25px;
+  object-fit: cover;
+}
+
+div.descpro {
+  padding: 15px;
+  height: 8vh;
+  text-align: center;
+  overflow-y: auto;
+  color: white;
+
+  scrollbar-color: rgba(255, 255, 255, 0.7) rgba(255, 255, 255, 0.7);
+  scrollbar-width: thin;
+}
+
+div.circle {
+  width: 9vw;
+  height: 9vw;
+  background-color: transparent;
+  border-radius: 100px;
+  text-align: center;
+  margin: auto;
+  border: #033f51;
+}
+
+.circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-top: 7vh;
+}
+p {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+.prof {
+  font-weight: bold;
+  font-size: 2vw;
+  margin-top: 1vw;
+}
+
+.wallet {
+  margin-top: 8vh;
+  font-weight: bold;
+  font-size: 1vw;
+}
+
+.user {
+  font-weight: bold;
+  font-size: 0.8vw;
+  margin-bottom: 2vh;
+}
+
+.following {
+  height: 2vh;
+  float: left;
+  width: 25%;
+
+  font-size: 1vw;
+  padding-left: 1vw;
+}
+.followers {
+  height: 2vh;
+  float: left;
+  width: 50%;
+
+  font-size: 1vw;
+}
+.follimg {
+  height: 5vh;
+
+  float: right;
+  width: 20%;
+  background-color: rgb(28, 197, 240);
+  border-radius: 15px;
+  line-height: 5vh;
+  margin-right: 1vw;
+}
+.following2 {
+  height: 2vh;
+  float: left;
+  width: 25%;
+
+  margin-top: 1vh;
+  font-size: 1vw;
+  padding-left: 1vw;
+}
+.followers2 {
+  height: 2vh;
+  float: left;
+  width: 50%;
+
+  margin-top: 1vh;
+  font-size: 1vw;
+}
+
+.about {
+  font-size: 2vw;
+  font-weight: bold;
+  margin-top: 10vh;
+}
+
+.isiabout {
+  font-size: 0.7vw;
+  margin-top: 1vh;
+  padding: 1vw;
+}
+
+hr.hr1 {
+  width: 80%;
+}
+
+.join {
+  font-size: 1vw;
+  margin-top: 1vh;
+  padding: 1vw;
+}
